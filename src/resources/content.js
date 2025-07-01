@@ -1,25 +1,25 @@
 import { Logo } from "@once-ui-system/core";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Norman",
+  lastName: "Samsudin",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Flutter Developer @AgmoStudio",
+  avatar: "/images/profile.jpg",
+  email: "normansamsudin49@gmail.com",
+  location: "Asia/Kuala_Lumpur",
+  languages: ["Flutter", "Node.js", "Dev Ops", "MySQL", "MongoDB", "Digital Ocean", "Php", "Ubuntu", "Basic Web Pentest"],
 };
 
-const newsletter = {
+const contact = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Get in Touch</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      Have a project in mind or just want to chat? I'd love to hear from you. 
+      Send me a message and I'll get back to you as soon as possible.
     </>
   ),
 };
@@ -30,17 +30,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/NormanSamsudin",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/norman-samsudin-923b31231/",
   },
   {
     name: "Email",
@@ -55,16 +50,12 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
-  featured: {
-    display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
-  },
-  subline: (
+  headline: <>Transforming ideas into digital reality</>,
+    subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon="/trademarks/wordmark-dark.svg" style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      <br />
+      I'm Norman, a Flutter developer passionate about mobile and web development.
+      Continuously learning new technologies and exploring modern tech stacks.
     </>
   ),
 };
@@ -90,9 +81,9 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Norman is a Malaysia-based Flutter developer with a passion for transforming complex ideas
+        into elegant mobile and web solutions. His work spans cross-platform applications, backend
+        systems, and the seamless integration of modern technology stacks.
       </>
     ),
   },
@@ -101,41 +92,69 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Agmo Studio Sdn Bhd",
+        timeframe: "2024 - Present",
+        role: "Mobile App Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Developed and deployed multiple cross-platform mobile applications using Flutter,
+            serving thousands of users across Android and iOS platforms.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Implemented CI/CD pipelines and automated deployment processes using Firebase, 
+            reducing manual deployment time and improving release reliability.
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/projects/project-01/cover-01.jpg",
+          //   alt: "Once UI Project",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Boostorder Sdn Bhd",
+        timeframe: "2023",
+        role: "Quality Assurance Engineer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Developed and implemented automated testing scripts for Flutter and MAUI applications,
+            improving testing efficiency and ensuring consistent quality across mobile platforms.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Created comprehensive web automation testing solutions using Selenium framework,
+            streamlining the testing process and reducing manual testing time by significant margins.
+          </>,
+          <>
+            Collaborated with development teams to identify and resolve bugs early in the development cycle,
+            contributing to faster release cycles and improved product reliability.
+          </>,
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          // {
+          //   src: "/images/projects/project-01/cover-01.jpg",
+          //   alt: "Once UI Project",
+          //   width: 16,
+          //   height: 9,
+          // },
+        ],
+      },
+      {
+        company: "Kawanku Electronics",
+        timeframe: "2018 - 2019",
+        role: "Promoter",
+        achievements: [
+          <>
+            Developed essential customer interaction and communication skills through direct sales experience,
+            learning effective negotiation techniques to build rapport with customers and close deals.
+          </>,
+          <>
+            Mastered the art of finding mutually beneficial solutions during price negotiations,
+            consistently achieving sales targets while maintaining customer satisfaction.
           </>,
         ],
         images: [],
@@ -147,12 +166,12 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "University Putra Malaysia",
+        description: <>Studied Bachelor of Computer Science (Computer System).</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Pahang Engineering Matriculation College",
+        description: <>Studied fundamental engineering principles including electrical, mechanical, civil, and chemical engineering basics.</>,
       },
     ],
   },
@@ -196,73 +215,13 @@ const about = {
   },
 };
 
-const blog = {
-  path: "/blog",
-  label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
-};
-
 const work = {
   path: "/work",
   label: "Work",
   title: `Projects – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
+  // Create new project pages by adding a new .mdx file to app/work/projects
   // All projects will be listed on the /home and /work routes
 };
 
-const gallery = {
-  path: "/gallery",
-  label: "Gallery",
-  title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
-  images: [
-    {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-  ],
-};
-
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, contact, home, about, work };
