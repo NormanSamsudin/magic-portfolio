@@ -6,11 +6,11 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Flutter Developer @AgmoStudio",
+  role: "Mobile App Developer",
   avatar: "/images/profile.jpg",
   email: "normansamsudin49@gmail.com",
   location: "Asia/Kuala_Lumpur",
-  languages: ["Flutter", "Node.js", "Dev Ops", "MySQL", "MongoDB", "Digital Ocean", "Php", "Ubuntu", "Basic Web Pentest"],
+  languages: ["Flutter", "Dart", "JavaScript", "Python", "Node.js", "MySQL", "MongoDB", "Firebase", "Git", "CI/CD"],
 };
 
 const contact = {
@@ -50,12 +50,12 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Transforming ideas into digital reality</>,
+  headline: <>Building exceptional mobile experiences</>,
     subline: (
     <>
       <br />
-      I'm Norman, a Flutter developer passionate about mobile and web development.
-      Continuously learning new technologies and exploring modern tech stacks.
+      I'm Norman, a passionate Mobile App Developer specializing in cross-platform development with Flutter.
+      I create seamless mobile experiences that connect users to innovative digital solutions.
     </>
   ),
 };
@@ -81,9 +81,10 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Norman is a Malaysia-based Flutter developer with a passion for transforming complex ideas
-        into elegant mobile and web solutions. His work spans cross-platform applications, backend
-        systems, and the seamless integration of modern technology stacks.
+        Norman is a Malaysia-based Mobile App Developer with expertise in cross-platform development
+        using Flutter. With experience spanning mobile application development, quality assurance,
+        and automated testing, he transforms ideas into robust mobile solutions that serve thousands
+        of users across Android and iOS platforms.
       </>
     ),
   },
@@ -163,53 +164,41 @@ const about = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Education",
     institutions: [
       {
         name: "University Putra Malaysia",
-        description: <>Studied Bachelor of Computer Science (Computer System).</>,
+        description: <>Bachelor of Computer Science (Computer System) - Focused on software engineering, system design, and computer architecture.</>,
       },
       {
         name: "Pahang Engineering Matriculation College",
-        description: <>Studied fundamental engineering principles including electrical, mechanical, civil, and chemical engineering basics.</>,
+        description: <>Foundation in Engineering - Comprehensive study of engineering principles including electrical, mechanical, civil, and chemical engineering fundamentals.</>,
       },
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Technical Skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Flutter Development",
+        description: <>Expert in cross-platform mobile app development using Flutter and Dart, creating apps that serve thousands of users across Android and iOS platforms.</>,
+        images: [],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Quality Assurance",
+        description: <>Experienced in automated testing with Selenium framework, Flutter testing, and MAUI application testing to ensure high-quality software delivery.</>,
+        images: [],
+      },
+      {
+        title: "CI/CD & DevOps",
+        description: <>Skilled in implementing CI/CD pipelines, automated deployment processes using Firebase, and reducing manual deployment time for improved reliability.</>,
+        images: [],
+      },
+      {
+        title: "Database Management",
+        description: <>Proficient in MySQL and MongoDB for backend data management and integration with mobile applications.</>,
+        images: [],
       },
     ],
   },
@@ -217,9 +206,9 @@ const about = {
 
 const work = {
   path: "/work",
-  label: "Work",
+  label: "Projects",
   title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
+  description: `Mobile development and software engineering projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/work/projects
   // All projects will be listed on the /home and /work routes
 };
