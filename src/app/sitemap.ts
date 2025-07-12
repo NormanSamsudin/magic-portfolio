@@ -1,8 +1,26 @@
 import { getPosts } from "@/utils/utils";
 import { baseURL, routes as routesConfig } from "@/resources";
 
+export const dynamic = "force-static";
+
 export default async function sitemap() {
-  const works = getPosts(["src", "app", "work", "projects"]).map((post) => ({
+  interface PostMetadata {
+    publishedAt: string;
+    [key: string]: any;
+  }
+
+  interface Post {
+    slug: string;
+    metadata: PostMetadata;
+    [key: string]: any;
+  }
+
+  interface SitemapEntry {
+    url: string;
+    lastModified: string;
+  }
+
+  const works: SitemapEntry[] = getPosts(["src", "app", "work", "projects"]).map((post: Post): SitemapEntry => ({
     url: `${baseURL}/work/${post.slug}`,
     lastModified: post.metadata.publishedAt,
   }));

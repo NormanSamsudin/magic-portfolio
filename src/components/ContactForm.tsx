@@ -101,6 +101,17 @@ export const ContactForm = ({ contact }: { contact: ContactFormProps }) => {
     setSubmitStatus('idle');
 
     try {
+      // For static export builds, contact form API is not available
+      if (process.env.NODE_ENV === 'production') {
+        // In production static build, show a message or redirect to email
+        window.location.href = `mailto:${formData.email}?subject=Contact from Portfolio&body=${encodeURIComponent(formData.message)}`;
+        setSubmitStatus('success');
+        setFormData({ name: "", email: "", message: "" });
+        setTouched({ name: false, email: false, message: false });
+        setErrors({ name: "", email: "", message: "" });
+        return;
+      }
+
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {

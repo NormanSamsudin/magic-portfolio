@@ -2,10 +2,11 @@ import { ImageResponse } from "next/og";
 import { baseURL, person } from "@/resources";
 
 export const runtime = "nodejs";
+export const dynamic = "force-static";
 
-export async function GET(request: Request) {
-  let url = new URL(request.url);
-  let title = url.searchParams.get("title") || "Portfolio";
+export async function GET() {
+  // For static builds, return a default OG image
+  let title = "Portfolio";
 
   async function loadGoogleFont(font: string) {
     const url = `https://fonts.googleapis.com/css2?family=${font}`
@@ -62,15 +63,21 @@ export async function GET(request: Request) {
             gap: "5rem",
           }}
         >
-          <img
-            src={baseURL + person.avatar}
+          <div
             style={{
               width: "12rem",
               height: "12rem",
-              objectFit: "cover",
+              backgroundColor: "#333",
               borderRadius: "100%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: "4rem",
+              color: "#fff",
             }}
-          />
+          >
+            {person.name.split(' ').map(n => n[0]).join('')}
+          </div>
           <div
             style={{
               display: "flex",

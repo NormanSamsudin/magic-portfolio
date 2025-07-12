@@ -1,13 +1,7 @@
-import { NextRequest, NextResponse } from "next/server";
-import * as cookie from "cookie";
+// API routes are not supported in static export builds
+// This route is disabled for static deployment
+export const dynamic = "force-static";
 
-export async function GET(request: NextRequest) {
-  const cookieHeader = request.headers.get("cookie") || "";
-  const cookies = cookie.parse(cookieHeader);
-
-  if (cookies.authToken === "authenticated") {
-    return NextResponse.json({ authenticated: true }, { status: 200 });
-  } else {
-    return NextResponse.json({ authenticated: false }, { status: 401 });
-  }
+export async function GET() {
+  return Response.json({ authenticated: false }, { status: 401 });
 }
