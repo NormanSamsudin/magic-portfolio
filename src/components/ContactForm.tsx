@@ -101,35 +101,16 @@ export const ContactForm = ({ contact }: { contact: ContactFormProps }) => {
     setSubmitStatus('idle');
 
     try {
-      // For static export builds, contact form API is not available
-      if (process.env.NODE_ENV === 'production') {
-        // In production static build, show a message or redirect to email
-        window.location.href = `mailto:${formData.email}?subject=Contact from Portfolio&body=${encodeURIComponent(formData.message)}`;
-        setSubmitStatus('success');
-        setFormData({ name: "", email: "", message: "" });
-        setTouched({ name: false, email: false, message: false });
-        setErrors({ name: "", email: "", message: "" });
-        return;
-      }
-
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        setSubmitStatus('success');
-        setFormData({ name: "", email: "", message: "" });
-        setTouched({ name: false, email: false, message: false });
-        setErrors({ name: "", email: "", message: "" });
-      } else {
-        const errorData = await response.json();
-        console.error('Error:', errorData);
-        setSubmitStatus('error');
-      }
+      // For static export builds, use mailto instead of API
+      const subject = `Contact from Portfolio - ${formData.name}`;
+      const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
+      const mailtoLink = `mailto:${formData.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      
+      window.location.href = mailtoLink;
+      setSubmitStatus('success');
+      setFormData({ name: "", email: "", message: "" });
+      setTouched({ name: false, email: false, message: false });
+      setErrors({ name: "", email: "", message: "" });
     } catch (error) {
       console.error('Error:', error);
       setSubmitStatus('error');
