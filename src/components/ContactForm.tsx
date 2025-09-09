@@ -101,16 +101,24 @@ export const ContactForm = ({ contact }: { contact: ContactFormProps }) => {
     setSubmitStatus('idle');
 
     try {
-      // For static export builds, use mailto instead of API
-      const subject = `Contact from Portfolio - ${formData.name}`;
-      const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
-      const mailtoLink = `mailto:${formData.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      
-      window.location.href = mailtoLink;
-      setSubmitStatus('success');
-      setFormData({ name: "", email: "", message: "" });
-      setTouched({ name: false, email: false, message: false });
-      setErrors({ name: "", email: "", message: "" });
+      // Send data to webhook endpoint
+      const webhookUrl = new URL('https://normansamsudin.duckdns.org/webhook/feedback');
+      webhookUrl.searchParams.append('name', formData.name);
+      webhookUrl.searchParams.append('email', formData.email);
+      webhookUrl.searchParams.append('message', formData.message);
+
+      const response = await fetch(webhookUrl.toString(), {
+        method: 'GET',
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: "", email: "", message: "" });
+        setTouched({ name: false, email: false, message: false });
+        setErrors({ name: "", email: "", message: "" });
+      } else {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
     } catch (error) {
       console.error('Error:', error);
       setSubmitStatus('error');
