@@ -114,14 +114,14 @@ export default function Home() {
             <Column flex={1} gap="s" paddingX="0" paddingY="0" background="neutral-alpha-weak" radius="m" style={{ minWidth: "200px", maxWidth: "320px", display: "flex", flexDirection: "column" }}>
               <a href="https://izzudinintan.netlify.app/#" target="_blank" rel="noopener noreferrer" style={{ cursor: "pointer" }}>
                 <Media
-                  src="/images/projects/project-01/elegent classic.jpg"
-                  alt="Elegant Classic Template Preview"
+                  src="/images/projects/project-01/colorful_floral.png"
+                  alt="Colorful Floral Template Preview"
                   radius="m"
                   style={{ width: "100%", height: "180px", objectFit: "cover" }}
                 />
               </a>
               <Column gap="s" paddingX="12" paddingY="12" style={{ flex: "1", display: "flex", flexDirection: "column" }}>
-                <Heading variant="heading-strong-s">Elegant Classic</Heading>
+                <Heading variant="heading-strong-s">Colorful FLoral</Heading>
                 <Text onBackground="neutral-weak" variant="body-default-xs" style={{ flex: "1" }}>
                   Timeless and sophisticated design with clean typography and subtle animations. Perfect for traditional ceremonies.
                 </Text>
@@ -129,7 +129,7 @@ export default function Home() {
                   <Flex fillWidth horizontal="space-between" vertical="center">
                     <Text variant="heading-strong-m" onBackground="brand-strong">RM 30.00</Text>
                     <a 
-                      href="https://wa.me/60123456789?text=Hi! I'm interested in the Elegant Classic wedding template (RM 30.00). Can you provide more details?" 
+                      href="https://wa.me/60182402451?text=Hi! I'm interested in the Colorful Floral wedding template (RM 30.00). Can you provide more details?" 
                       target="_blank" 
                       rel="noopener noreferrer" 
                       style={{ textDecoration: "none" }}
@@ -144,7 +144,7 @@ export default function Home() {
             <Column flex={1} gap="s" paddingX="0" paddingY="0" background="neutral-alpha-weak" radius="m" style={{ minWidth: "200px", maxWidth: "320px", display: "flex", flexDirection: "column" }}>
               <a href="https://izzudinintan.netlify.app/#" target="_blank" rel="noopener noreferrer" style={{ cursor: "pointer" }}>
                 <Media
-                  src="/images/projects/project-01/modern minimalist.jpg"
+                  src="/images/projects/project-01/modern_minimalist.png"
                   alt="Modern Minimalist Template Preview"
                   radius="m"
                   style={{ width: "100%", height: "180px", objectFit: "cover" }}
@@ -159,7 +159,98 @@ export default function Home() {
                   <Flex fillWidth horizontal="space-between" vertical="center">
                     <Text variant="heading-strong-m" onBackground="brand-strong">RM 30.00</Text>
                     <a 
-                      href="https://wa.me/60123456789?text=Hi! I'm interested in the Modern Minimalist wedding template (RM 30.00). Can you provide more details?" 
+                      href="https://wa.me/60182402451?text=Hi! I'm interested in the Modern Minimalist wedding template (RM 30.00). Can you provide more details?" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      style={{ textDecoration: "none" }}
+                    >
+                      <Badge background="brand-strong" textVariant="label-default-xs" style={{ cursor: "pointer" }}>Buy Now</Badge>
+                    </a>
+                  </Flex>
+                </Column>
+              </Column>
+            </Column>
+            
+            <Column flex={1} gap="s" paddingX="0" paddingY="0" background="neutral-alpha-weak" radius="m" style={{ minWidth: "200px", maxWidth: "320px", display: "flex", flexDirection: "column" }}>
+              <a href="https://izzudinintan.netlify.app/#" target="_blank" rel="noopener noreferrer" style={{ cursor: "pointer" }}>
+                <Media
+                  src="/images/projects/project-01/botanical_pink.png"
+                  alt="Botanical Pink Template Preview"
+                  radius="m"
+                  style={{ width: "100%", height: "180px", objectFit: "cover" }}
+                />
+              </a>
+              <Column gap="s" paddingX="12" paddingY="12" style={{ flex: "1", display: "flex", flexDirection: "column" }}>
+                <Heading variant="heading-strong-s">Botanical Pink</Heading>
+                <Text onBackground="neutral-weak" variant="body-default-xs" style={{ flex: "1" }}>
+                  Floral-inspired design with soft colors and organic elements. Perfect for garden or outdoor weddings.
+                </Text>
+                <Column gap="s" paddingTop="8">
+                  <Flex fillWidth horizontal="space-between" vertical="center">
+                    <Text variant="heading-strong-m" onBackground="brand-strong">RM 30.00</Text>
+                    <a 
+                      href="https://wa.me/60182402451?text=Hi! I'm interested in the Botanical Pink wedding template (RM 30.00). Can you provide more details?" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      style={{ textDecoration: "none" }}
+                    >
+                      <Badge background="brand-strong" textVariant="label-default-xs" style={{ cursor: "pointer" }}>Buy Now</Badge>
+                    </a>
+                  </Flex>
+                </Column>
+              </Column>
+            </Column>
+          </Row>
+               <Row fillWidth gap="s" wrap>
+            <Column flex={1} gap="s" paddingX="0" paddingY="0" background="neutral-alpha-weak" radius="m" style={{ minWidth: "200px", maxWidth: "320px", display: "flex", flexDirection: "column" }}>
+              <a href="https://izzudinintan.netlify.app/#" target="_blank" rel="noopener noreferrer" style={{ cursor: "pointer" }}>
+                <Media
+                  src="/images/projects/project-01/ocean_blue.png"
+                  alt="Ocean Blue Template Preview"
+                  radius="m"
+                  style={{ width: "100%", height: "180px", objectFit: "cover" }}
+                />
+              </a>
+              <Column gap="s" paddingX="12" paddingY="12" style={{ flex: "1", display: "flex", flexDirection: "column" }}>
+                <Heading variant="heading-strong-s">Ocean Blue</Heading>
+                <Text onBackground="neutral-weak" variant="body-default-xs" style={{ flex: "1" }}>
+                  Timeless and sophisticated design with clean typography and subtle animations. Perfect for traditional ceremonies.
+                </Text>
+                <Column gap="s" paddingTop="8">
+                  <Flex fillWidth horizontal="space-between" vertical="center">
+                    <Text variant="heading-strong-m" onBackground="brand-strong">RM 30.00</Text>
+                    <a 
+                      href="https://wa.me/60182402451?text=Hi! I'm interested in the Ocean Blue wedding template (RM 30.00). Can you provide more details?" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      style={{ textDecoration: "none" }}
+                    >
+                      <Badge background="brand-strong" textVariant="label-default-xs" style={{ cursor: "pointer" }}>Buy Now</Badge>
+                    </a>
+                  </Flex>
+                </Column>
+              </Column>
+            </Column>
+            
+            <Column flex={1} gap="s" paddingX="0" paddingY="0" background="neutral-alpha-weak" radius="m" style={{ minWidth: "200px", maxWidth: "320px", display: "flex", flexDirection: "column" }}>
+              <a href="https://izzudinintan.netlify.app/#" target="_blank" rel="noopener noreferrer" style={{ cursor: "pointer" }}>
+                <Media
+                  src="/images/projects/project-01/olive_green.png"
+                  alt="Olive Green Template Preview"
+                  radius="m"
+                  style={{ width: "100%", height: "180px", objectFit: "cover" }}
+                />
+              </a>
+              <Column gap="s" paddingX="12" paddingY="12" style={{ flex: "1", display: "flex", flexDirection: "column" }}>
+                <Heading variant="heading-strong-s">Olive Green</Heading>
+                <Text onBackground="neutral-weak" variant="body-default-xs" style={{ flex: "1" }}>
+                  Clean, contemporary design with bold typography and smooth transitions. Ideal for modern couples.
+                </Text>
+                <Column gap="s" paddingTop="8">
+                  <Flex fillWidth horizontal="space-between" vertical="center">
+                    <Text variant="heading-strong-m" onBackground="brand-strong">RM 30.00</Text>
+                    <a 
+                      href="https://wa.me/60182402451?text=Hi! I'm interested in the Olive Green wedding template (RM 30.00). Can you provide more details?" 
                       target="_blank" 
                       rel="noopener noreferrer" 
                       style={{ textDecoration: "none" }}
@@ -181,7 +272,7 @@ export default function Home() {
                 />
               </a>
               <Column gap="s" paddingX="12" paddingY="12" style={{ flex: "1", display: "flex", flexDirection: "column" }}>
-                <Heading variant="heading-strong-s">Romantic Garden</Heading>
+                <Heading variant="heading-strong-s">Purple Lavender</Heading>
                 <Text onBackground="neutral-weak" variant="body-default-xs" style={{ flex: "1" }}>
                   Floral-inspired design with soft colors and organic elements. Perfect for garden or outdoor weddings.
                 </Text>
@@ -189,7 +280,7 @@ export default function Home() {
                   <Flex fillWidth horizontal="space-between" vertical="center">
                     <Text variant="heading-strong-m" onBackground="brand-strong">RM 30.00</Text>
                     <a 
-                      href="https://wa.me/60123456789?text=Hi! I'm interested in the Romantic Garden wedding template (RM 30.00). Can you provide more details?" 
+                      href="https://wa.me/60182402451?text=Hi! I'm interested in the Purple Lavender wedding template (RM 30.00). Can you provide more details?" 
                       target="_blank" 
                       rel="noopener noreferrer" 
                       style={{ textDecoration: "none" }}
