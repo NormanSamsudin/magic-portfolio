@@ -112,7 +112,7 @@ export default function Home() {
           {/* Wedding Template Cards */}
           <Row fillWidth gap="s" wrap>
             <Column flex={1} gap="s" paddingX="0" paddingY="0" background="neutral-alpha-weak" radius="m" style={{ minWidth: "200px", maxWidth: "320px", display: "flex", flexDirection: "column" }}>
-              <a href="https://izzudinintan.netlify.app/#" target="_blank" rel="noopener noreferrer" style={{ cursor: "pointer" }}>
+              <a href="https://colorfulfloral.netlify.app/#/" target="_blank" rel="noopener noreferrer" style={{ cursor: "pointer" }}>
                 <Media
                   src="/images/projects/project-01/colorful_floral.png"
                   alt="Colorful Floral Template Preview"
@@ -142,7 +142,7 @@ export default function Home() {
             </Column>
             
             <Column flex={1} gap="s" paddingX="0" paddingY="0" background="neutral-alpha-weak" radius="m" style={{ minWidth: "200px", maxWidth: "320px", display: "flex", flexDirection: "column" }}>
-              <a href="https://izzudinintan.netlify.app/#" target="_blank" rel="noopener noreferrer" style={{ cursor: "pointer" }}>
+              <a href="https://modernminimal.netlify.app/#/" target="_blank" rel="noopener noreferrer" style={{ cursor: "pointer" }}>
                 <Media
                   src="/images/projects/project-01/modern_minimalist.png"
                   alt="Modern Minimalist Template Preview"
@@ -172,7 +172,7 @@ export default function Home() {
             </Column>
             
             <Column flex={1} gap="s" paddingX="0" paddingY="0" background="neutral-alpha-weak" radius="m" style={{ minWidth: "200px", maxWidth: "320px", display: "flex", flexDirection: "column" }}>
-              <a href="https://izzudinintan.netlify.app/#" target="_blank" rel="noopener noreferrer" style={{ cursor: "pointer" }}>
+              <a href="https://botanicalpink.netlify.app/#/" target="_blank" rel="noopener noreferrer" style={{ cursor: "pointer" }}>
                 <Media
                   src="/images/projects/project-01/botanical_pink.png"
                   alt="Botanical Pink Template Preview"
@@ -203,7 +203,7 @@ export default function Home() {
           </Row>
                <Row fillWidth gap="s" wrap>
             <Column flex={1} gap="s" paddingX="0" paddingY="0" background="neutral-alpha-weak" radius="m" style={{ minWidth: "200px", maxWidth: "320px", display: "flex", flexDirection: "column" }}>
-              <a href="https://izzudinintan.netlify.app/#" target="_blank" rel="noopener noreferrer" style={{ cursor: "pointer" }}>
+              <a href="https://oceanblues.netlify.app/#/" target="_blank" rel="noopener noreferrer" style={{ cursor: "pointer" }}>
                 <Media
                   src="/images/projects/project-01/ocean_blue.png"
                   alt="Ocean Blue Template Preview"
@@ -233,7 +233,7 @@ export default function Home() {
             </Column>
             
             <Column flex={1} gap="s" paddingX="0" paddingY="0" background="neutral-alpha-weak" radius="m" style={{ minWidth: "200px", maxWidth: "320px", display: "flex", flexDirection: "column" }}>
-              <a href="https://izzudinintan.netlify.app/#" target="_blank" rel="noopener noreferrer" style={{ cursor: "pointer" }}>
+              <a href="https://olivegreens.netlify.app/#/" target="_blank" rel="noopener noreferrer" style={{ cursor: "pointer" }}>
                 <Media
                   src="/images/projects/project-01/olive_green.png"
                   alt="Olive Green Template Preview"
@@ -263,7 +263,7 @@ export default function Home() {
             </Column>
             
             <Column flex={1} gap="s" paddingX="0" paddingY="0" background="neutral-alpha-weak" radius="m" style={{ minWidth: "200px", maxWidth: "320px", display: "flex", flexDirection: "column" }}>
-              <a href="https://izzudinintan.netlify.app/#" target="_blank" rel="noopener noreferrer" style={{ cursor: "pointer" }}>
+              <a href="https://lightmaroon.netlify.app/#/" target="_blank" rel="noopener noreferrer" style={{ cursor: "pointer" }}>
                 <Media
                   src="/images/projects/project-01/romantic garden.jpg"
                   alt="Romantic Garden Template Preview"
